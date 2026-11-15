@@ -72,14 +72,14 @@ export const Hero: React.FC = () => {
           {...fadeUp(0.05)}
           style={{
             fontFamily: "'Epic Pro', 'SF Pro Display', 'SF Pro', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif",
-            fontWeight: 300,
+            fontWeight: 600,
           }}
-          className="text-[clamp(2.35rem,6.5vw+0.25rem,4.75rem)] font-light tracking-[-0.02em] text-slate-900 max-w-4xl mx-auto leading-[1.12] sm:leading-[1.08] drop-shadow-[0_1px_2px_rgba(255,255,255,0.85)]"
+          className="text-[clamp(2.35rem,6.5vw+0.25rem,4.75rem)] font-semibold tracking-[-0.02em] text-slate-900 max-w-4xl mx-auto leading-[1.12] sm:leading-[1.08] drop-shadow-[0_1px_2px_rgba(255,255,255,0.85)]"
         >
           Technology,{' '}
           <span className="sm:block">
             built with{' '}
-            <span className="text-transparent bg-clip-text bg-gradient-to-r from-brand-600 via-brand-500 to-amber-600 font-light">
+            <span className="text-transparent bg-clip-text bg-gradient-to-r from-brand-600 via-brand-500 to-amber-600 font-semibold">
               purpose.
             </span>
           </span>
