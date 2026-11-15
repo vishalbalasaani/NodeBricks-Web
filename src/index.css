@@ -1,0 +1,73 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@font-face {
+  font-family: 'Epic Pro';
+  src: local('Epic Pro'),
+       local('GC Epic Pro'),
+       local('SF Pro Display'),
+       local('SF Pro');
+  font-display: swap;
+}
+
+@layer base {
+  html {
+    scroll-behavior: smooth;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+  }
+
+  body {
+    font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+    font-weight: 400;
+  }
+
+  h1, h2, h3, h4, h5, h6, .font-heading {
+    font-family: 'Manrope', 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+    letter-spacing: -0.025em;
+  }
+
+  /* Custom subtle scrollbar */
+  ::-webkit-scrollbar {
+    width: 8px;
+  }
+  ::-webkit-scrollbar-track {
+    background: transparent;
+  }
+  ::-webkit-scrollbar-thumb {
+    background-color: rgba(156, 163, 175, 0.4);
+    border-radius: 9999px;
+  }
+  ::-webkit-scrollbar-thumb:hover {
+    background-color: rgba(156, 163, 175, 0.7);
+  }
+}
+
+/* Offset for fixed sticky navbar navigation */
+section {
+  scroll-margin-top: 5rem;
+}
+
+/* Reference-Matched Warm Immersive Hero Atmosphere (Refined) */
+.hero-ambient-atmosphere {
+  background-color: #F8F9FC;
+  background-image: 
+    /* 1. Refined bottom-center orange glow (reduced intensity by ~18% for soft luminescence) */
+    radial-gradient(ellipse 75% 48% at 50% 96%, rgba(255, 100, 31, 0.38) 0%, rgba(255, 125, 60, 0.22) 40%, rgba(255, 155, 131, 0.08) 70%, transparent 100%),
+    /* 2. Softened golden-yellow glow on right (reduced saturation for seamless warmth) */
+    radial-gradient(circle 700px at 100% 52%, rgba(255, 208, 95, 0.38) 0%, rgba(255, 222, 135, 0.16) 45%, rgba(255, 235, 175, 0.06) 65%, transparent 80%),
+    /* 3. Softened coral/pink glow on left (blends naturally into the center) */
+    radial-gradient(circle 700px at 0% 55%, rgba(255, 155, 131, 0.35) 0%, rgba(255, 185, 165, 0.15) 45%, rgba(255, 215, 205, 0.06) 65%, transparent 80%),
+    /* 4. Warm peach diffusion across middle/lower body */
+    radial-gradient(ellipse 90% 60% at 50% 68%, rgba(255, 230, 221, 0.70) 0%, rgba(255, 242, 237, 0.30) 55%, transparent 90%),
+    /* 5. Clean, almost-white background around navbar and upper hero area */
+    linear-gradient(180deg, #F8F9FC 0%, #FFFFFF 22%, #FFF7F3 55%, #FFE9DF 100%);
+}
+
+.dark .hero-ambient-atmosphere {
+  background-color: #0c0f14;
+  background-image:
+    radial-gradient(circle 700px at 80% 35%, rgba(253, 84, 2, 0.12), transparent 70%),
+    radial-gradient(circle 650px at 15% 55%, rgba(56, 189, 248, 0.07), transparent 70%);
+}

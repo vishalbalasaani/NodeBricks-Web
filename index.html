@@ -1,0 +1,37 @@
+<!doctype html>
+<html lang="en" class="scroll-smooth">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/png" href="/favicon.png" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>NodeBricks &mdash; Technology, Built with Purpose</title>
+    <meta name="description" content="NodeBricks is a technology company focused on developing digital products and software solutions that address real-world needs." />
+    <meta name="keywords" content="NodeBricks, software company, technology products, digital solutions, corporate software" />
+    <meta property="og:title" content="NodeBricks &mdash; Official Website" />
+    <meta property="og:description" content="A technology company focused on developing digital products and software solutions that address real-world needs." />
+    <meta property="og:url" content="https://www.nodebricks.in/" />
+    <meta property="og:type" content="website" />
+    <meta property="og:image" content="/nodebricks-logo.png" />
+
+    <!-- Preload key above-the-fold assets for rapid mobile loading -->
+    <link rel="preload" as="image" href="/nodebricks-logo.png" />
+    <link rel="preload" as="image" href="/hero-wireframe-poster.jpg" />
+
+    <!-- Google Fonts: Inter & Manrope -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Manrope:wght@500;600;700;800&display=swap" rel="stylesheet" />
+
+    <script>
+      // Ensure dark mode is never applied
+      try {
+        localStorage.removeItem('nodebricks-theme');
+        document.documentElement.classList.remove('dark');
+      } catch (e) {}
+    </script>
+  </head>
+  <body class="bg-slate-50 text-slate-900 font-sans antialiased selection:bg-brand-500 selection:text-white min-h-screen flex flex-col">
+    <div id="root"></div>
+    <script type="module" src="/src/main.tsx"></script>
+  </body>
+</html>
