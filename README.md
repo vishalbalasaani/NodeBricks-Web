@@ -43,41 +43,6 @@ npm run preview
 
 ---
 
-## Contact Configuration
-
-Official contact details and social media links can be updated directly in `src/components/Contact.tsx`:
-
-```typescript
-export const CONTACT_DETAILS = {
-  phone1: '+91 85209 36604',
-  phone1Raw: '+918520936604',
-  phone2: '+91 90303 30384',
-  phone2Raw: '+919030330384',
-  instagramUrl: 'https://www.instagram.com/node.bricks?utm_source=qr&igsh=MWZxbXJydzBhdnB4dQ%3D%3D',
-  instagramDisplay: 'instagram.com/node.bricks',
-  instagramHandle: '@node.bricks',
-};
-```
-
----
-
-## Adding New Products
-
-To add upcoming products to the catalog, edit the `products` array in `src/components/Products.tsx`:
-
-```typescript
-const products: Product[] = [
-  {
-    id: 'school-platform',
-    name: 'School Management & Parent Communication Platform',
-    status: 'In Development',
-    description: 'A digital platform designed to simplify school management and strengthen communication between schools and parents.',
-    brandLabel: 'A NodeBricks Product',
-  },
-  // Add new products here
-];
-```
-
 ---
 
 ## Features
